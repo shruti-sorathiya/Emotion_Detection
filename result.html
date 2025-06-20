@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+           
+        }
+        img {
+            max-width: 300px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .result {
+            font-size: 24px;
+            color: #333;
+           
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 16px;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detection Result</h1>
+    <img src="{{ image_url }}" alt="Uploaded Image">
+    <p class="result">Detected Emotion: <strong>{{ emotion }}</strong></p>
+    <a href="/">Detect Another Emotion</a>
+</body>
+</html>
